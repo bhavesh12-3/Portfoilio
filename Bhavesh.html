@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bhavesh Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 50px;
+background:rgba(0,0,0,0.4);
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#00e6e6;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+animation:fade 2s;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero span{
+color:#00e6e6;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(40px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* SECTION */
+
+.section{
+padding:60px 100px;
+}
+
+.section h2{
+color:#00e6e6;
+margin-bottom:20px;
+}
+
+/* CARD */
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:20px;
+margin:10px;
+border-radius:10px;
+transition:0.5s;
+}
+
+.card:hover{
+transform:scale(1.05);
+background:rgba(0,0,0,0.4);
+}
+
+/* SKILLS */
+
+.skillbar{
+background:#ddd;
+height:20px;
+border-radius:20px;
+margin:10px 0;
+}
+
+.skill{
+height:20px;
+background:#00e6e6;
+border-radius:20px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+margin-top:30px;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;   /* keeps aspect ratio, no stretching */
+    object-position: center;
+    border: 3px solid #00ffff;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2 class="logo">My Portfolio</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills"> Skills</a></li>
+   <li><a href="#Contact"> Contact</a></li>
+  </ul>
+</nav>
+<!-- Home -->
+ <div class="hero">
+<div>
+<section id="home" class="home">
+  <img src="c:\Users\Bhavesh Chaudhari\Downloads\WhatsApp Image 2026-03-27 at 11.01.53.jpeg" alt="Bhavesh Chaudhari" class="profile-img">
+  <h1><div class="typing" id="typing"></div>
+Hello, I'm <span>Bhavesh Chaudhari</span></h1>
+<div class="typing" id="typing"><p>B.Tech Computer Engineering Student</p></div>
+</div>
+</div>
+</section>
+<!-- About -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am passionate about understanding computers, creating useful digital solutions,
+    and presenting ideas clearly. My academic interests include programming,
+    game design, and real-world problem solving.
+  </p>
+
+  <div class="card">
+          <h3>Strengths</h3>
+          <p>
+            Curious learner, Analytical thinker, Interested in
+            practical solutions, and always working to improve technical understanding.
+          </p>
+        </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section">
+  <h2>Education</h2>
+
+  <div class="card">
+<h3>B.Tech Computer Engineering</h3>
+<p>MIT Academy of Engineering, Alandi</p>
+<p>Savitribai Phule Pune University</p>
+</div>
+
+  <div class="card">
+<h3>HSC</h3>
+<p>SDSM College, Palghar</p>
+<p>52.50%</p>
+</div>
+
+<div class="card">
+<h3>SSC</h3>
+<p>B.M.T English Medium School, Vangoan</p>
+<p>76%</p>
+</div>
+</section>
+
+<!-- Skills -->
+<div class="section" id="skills">
+<h2>Skills</h2>
+
+C Programming
+<div class="skillbar"><div class="skill" style="width:70%"></div></div>
+
+Python
+<div class="skillbar"><div class="skill" style="width:60%"></div></div>
+
+HTML
+<div class="skillbar"><div class="skill" style="width:75%"></div></div>
+Java
+<div class="skillbar"><div class="skill" style="width:50%"></div></div>
+</div>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="section" id="skills">
+<h2>Contact</h2>
+<div class="card">
+        <p><strong>Name:</strong> Bhavesh Pradip Chaudhari</p>
+        <p><strong>Role:</strong> BTech CS(DS) Student</p>
+        <p><strong>Location:</strong> India</p>
+        <p><strong>Email:</strong> bhausin123@gmail.com</p> 
+        <p><strong>Mobile Number:</strong> +918446453969</p>       
+        <p><strong>GitHub:</strong> </p>
+        <p><strong>LinkedIn:</strong></p>
+      </div>
+    </div>
+  </section>
+<footer>
+<p>© 2026 Bhavesh Chaudhari </p>
+</footer>
+
+</body>
+</html>
